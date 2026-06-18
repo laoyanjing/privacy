@@ -1,72 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Publisher Tool Terms of Service</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service – AmazonOps TikTok Publisher</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #111827; }
-    .header { background: #1e1b4b; padding: 20px 40px; display: flex; align-items: center; gap: 16px; }
-    .header img { width: 48px; height: 48px; border-radius: 10px; }
-    .header h1 { color: white; font-size: 20px; }
-    .header p { color: #a5b4fc; font-size: 13px; margin-top: 2px; }
-    .container { max-width: 800px; margin: 40px auto; background: white; border-radius: 12px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    h2 { font-size: 24px; color: #1e1b4b; margin-bottom: 8px; }
-    .date { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
-    h3 { font-size: 16px; color: #1e1b4b; margin: 24px 0 8px; }
-    p { color: #374151; line-height: 1.7; font-size: 15px; margin-bottom: 12px; }
-    ul { padding-left: 20px; color: #374151; line-height: 1.8; font-size: 15px; margin-bottom: 12px; }
-    .footer { text-align: center; padding: 24px; color: #9ca3af; font-size: 13px; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: #1e1e2e;
+      --accent: #ff2d55;
+      --accent-dim: rgba(255, 45, 85, 0.12);
+      --text-primary: #f0f0f5;
+      --text-secondary: #8888aa;
+      --text-muted: #55556a;
+      --mono: 'SF Mono', 'Fira Code', monospace;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg { width: 16px; height: 16px; fill: #fff; }
+
+    .logo-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .badge {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      padding: 2px 8px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Main layout ── */
+    .wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 32px 96px;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .doc-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: var(--mono);
+    }
+
+    /* ── Section ── */
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      color: var(--text-secondary);
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: var(--accent-dim);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 48px;
+    }
+
+    .contact-box p {
+      color: var(--text-primary);
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .contact-box a { font-weight: 600; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--mono);
+    }
+
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 40px 20px 80px; }
+      h1 { font-size: 24px; }
+      header { padding: 0 20px; }
+      footer { flex-direction: column; gap: 8px; text-align: center; }
+    }
   </style>
 </head>
 <body>
-  <div class="header">
-    <img src="data:image/png;base64,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" alt="Video Publisher Tool">
-    <div>
-      <h1>Video Publisher Tool</h1>
-      <p>Terms of Service</p>
+
+<header>
+  <a class="logo" href="/">
+    <div class="logo-icon">
+      <svg viewBox="0 0 16 16"><path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1zm5 2L5 8l3 4 3-4-3-2z"/></svg>
     </div>
+    <span class="logo-name">AmazonOps TikTok Publisher</span>
+  </a>
+  <span class="badge">LEGAL</span>
+</header>
+
+<main class="wrapper">
+
+  <div class="page-header">
+    <div class="doc-label">Legal Document</div>
+    <h1>Terms of Service</h1>
+    <div class="meta">Effective date: 2025-06-01 &nbsp;·&nbsp; Last updated: 2025-06-01</div>
   </div>
-  <div class="container">
-    <h2>Video Publisher Tool Terms of Service</h2>
-    <p class="date">Last updated: May 2026</p>
 
-    <h3>1. Acceptance of Terms</h3>
-    <p>By using Video Publisher Tool ("the App"), you agree to these Terms of Service. If you do not agree, please discontinue use of the App.</p>
+  <section>
+    <h2>Overview</h2>
+    <p>AmazonOps TikTok Publisher ("the Application") is a desktop tool that allows authorized Amazon e-commerce operators to schedule and publish video content to their own TikTok business accounts via the TikTok Content Posting API.</p>
+    <p>By accessing or using the Application, you agree to be bound by these Terms of Service. If you do not agree, do not use the Application.</p>
+  </section>
 
-    <h3>2. Description of Service</h3>
-    <p>Video Publisher Tool is a desktop application that enables TikTok creators to manage, schedule, and publish video content to their TikTok accounts through TikTok's official Content Posting API. The App uses the following TikTok API scopes:</p>
+  <section>
+    <h2>Eligibility</h2>
+    <p>The Application is intended solely for business users who:</p>
     <ul>
-      <li><strong>user.info.basic:</strong> To read your TikTok profile information (display name and avatar) for account identification within the App.</li>
-      <li><strong>video.publish:</strong> To directly publish video content to your TikTok profile on your behalf.</li>
-      <li><strong>video.upload:</strong> To upload video files to TikTok as drafts for further editing and publishing.</li>
+      <li>Are at least 18 years of age</li>
+      <li>Operate legitimate e-commerce businesses on Amazon</li>
+      <li>Hold valid TikTok business accounts with proper authorization</li>
+      <li>Comply with all applicable laws and TikTok's own Terms of Service</li>
     </ul>
+  </section>
 
-    <h3>3. User Responsibilities</h3>
+  <section>
+    <h2>Permitted Use</h2>
+    <p>You may use the Application only to:</p>
     <ul>
-      <li>You are responsible for all content published through the App.</li>
-      <li>You must comply with TikTok's Terms of Service and Community Guidelines.</li>
-      <li>You must only use the App to manage accounts you own or have explicit authorization to manage.</li>
-      <li>You are responsible for maintaining the security of your access tokens.</li>
+      <li>Connect your authorized TikTok business accounts via OAuth 2.0</li>
+      <li>Schedule and publish product-related video content to your own TikTok profiles</li>
+      <li>Manage publishing tasks for accounts you own or have explicit written authorization to manage</li>
     </ul>
+  </section>
 
-    <h3>4. Intellectual Property</h3>
-    <p>You retain all rights to the video content you publish through the App. The App does not claim any ownership over your content.</p>
+  <section>
+    <h2>Prohibited Conduct</h2>
+    <p>You must not use the Application to:</p>
+    <ul>
+      <li>Post content that violates TikTok's Community Guidelines or Terms of Service</li>
+      <li>Access or manage accounts you are not authorized to control</li>
+      <li>Upload spam, misleading, or deceptive content</li>
+      <li>Circumvent any rate limits, authentication, or security measures</li>
+      <li>Reverse-engineer, decompile, or tamper with the Application</li>
+    </ul>
+  </section>
 
-    <h3>5. Disclaimer</h3>
-    <p>The App is provided "as is" without warranties of any kind. We are not responsible for any content published through the App or any actions taken by TikTok regarding your account.</p>
+  <section>
+    <h2>TikTok API Compliance</h2>
+    <p>The Application integrates with the TikTok for Developers API. Your use of TikTok features through the Application is additionally governed by TikTok's <a href="https://www.tiktok.com/legal/page/global/terms-of-service/en" target="_blank">Terms of Service</a> and <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms/" target="_blank">Developer Terms</a>. We comply with TikTok's data handling and API usage policies.</p>
+  </section>
 
-    <h3>6. Limitation of Liability</h3>
-    <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
+  <section>
+    <h2>Data &amp; Privacy</h2>
+    <p>The Application requests access to TikTok scopes necessary for video publishing (<code>video.publish</code>, <code>video.upload</code>, <code>user.info.basic</code>). We do not store your TikTok credentials. OAuth tokens are stored locally on your device and are used solely to perform actions you explicitly initiate. For full details, see our <a href="/privacy.html">Privacy Policy</a>.</p>
+  </section>
 
-    <h3>7. Changes to Terms</h3>
-    <p>We reserve the right to update these Terms at any time. Continued use of the App constitutes acceptance of the updated Terms.</p>
+  <section>
+    <h2>Intellectual Property</h2>
+    <p>All content you publish through the Application remains your sole property. You retain full ownership of your videos, images, and captions. You grant TikTok the rights required by their platform to display your content, as defined in their terms.</p>
+  </section>
 
-    <h3>8. Contact</h3>
-    <p>For questions about these Terms, please visit: <a href="https://laoyanjing.github.io/privacy/">https://laoyanjing.github.io/privacy/</a></p>
+  <section>
+    <h2>Disclaimer of Warranties</h2>
+    <p>The Application is provided "as is" without warranties of any kind. We do not guarantee uninterrupted availability, as the Application depends on third-party APIs (TikTok, Amazon) that may experience outages or policy changes outside our control.</p>
+  </section>
+
+  <section>
+    <h2>Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of the Application, including but not limited to account suspension by TikTok or loss of content.</p>
+  </section>
+
+  <section>
+    <h2>Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Continued use of the Application after changes are posted constitutes your acceptance of the revised Terms. The effective date at the top of this document will always reflect the latest revision.</p>
+  </section>
+
+  <section>
+    <h2>Governing Law</h2>
+    <p>These Terms are governed by the laws of the People's Republic of China, without regard to conflict of law principles. Any disputes shall be resolved in the courts of Guangzhou, Guangdong Province.</p>
+  </section>
+
+  <div class="contact-box">
+    <p>Questions about these Terms? Contact us at <a href="mailto:support@amazon-ops-tools.pages.dev">support@amazon-ops-tools.pages.dev</a></p>
   </div>
-  <div class="footer">© 2026 Video Publisher Tool. All rights reserved.</div>
+
+</main>
+
+<footer>
+  <span>© 2025 AmazonOps TikTok Publisher. All rights reserved.</span>
+  <span>
+    <a href="/terms.html">Terms</a> &nbsp;·&nbsp;
+    <a href="/privacy.html">Privacy</a>
+  </span>
+</footer>
+
 </body>
 </html>
